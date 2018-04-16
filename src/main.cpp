@@ -276,7 +276,7 @@ int main()
 				// Launch all threads but one
 				for (int thrID = 0; thrID < nThreads-1; thrID++) 
 				{
-					vva_hole[thrID] = std::vector<double>(n_tSteps, 0);
+					vva_hole[thrID]= std::vector<double>(n_tSteps, 0);
 					vva_elec[thrID] = std::vector<double>(n_tSteps, 0);
 
 					// Simulate the drift of both electrons and holes
