@@ -1,4 +1,6 @@
 /*
+ * Modified version of TRACS by Alvaro Diez to include GPU paralellization using Cuda
+ *
  * @ Copyright 2014-2017 CERN and Instituto de Fisica de Cantabria - Universidad de Cantabria. All rigths not expressly granted are reserved [tracs.ssd@cern.ch]
  * This file is part of TRACS.
  *
