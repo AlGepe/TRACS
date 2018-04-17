@@ -28,8 +28,8 @@ int main()
 	for(int i=0; i<20; i++){
 		h_samples.at(i).at(0) = rand() % 10;
 		h_samples.at(i).at(1) = rand() % 22 + 2;
-		//std::cout << i << std::endl;
 	}
+	std::cout << eField.get_grid().at(0).size() << std::endl;
 	std::vector< std::vector<double> > *d_samplesPtr;
 	std::vector< double > h_result(20, 0), *d_values;
 	

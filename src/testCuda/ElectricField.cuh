@@ -8,16 +8,18 @@
 class ElectricField
 {
 	private:
-		std::vector< std::vector<double> >_grid;
 		double _xmax;
 		double _xmin;
 		double _ymax;
 		double _ymin;
+		std::vector< std::vector<double> > _grid;
+
 	public:
 		ElectricField(double xmin, double xmax, double ymin, double ymax, int gridsX, int gridsY);
 		double getEvalue(std::vector<double> point);
-		__host__ void getEvalue(std::vector<double> *points, double *value);
+		void getEvalue(std::vector<double> *points, double *value);
 		//__device__ void getEvalue(double *points, double *value);
-		__host__ __device__ bool isIn(double x, double y);
+		bool isIn(double x, double y);
+		std::vector< std::vector<double> > get_grid();
 };
 #endif //ELECTRICFIELD_H
